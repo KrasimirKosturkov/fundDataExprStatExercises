@@ -1,0 +1,52 @@
+function moviePrices([title, day]){
+    let titleToLower = title.toLowerCase(), dayToLower = day.toLowerCase()
+    if (titleToLower === 'the godfather'){
+        switch(dayToLower) {
+            case 'monday': return 12; break
+            case 'tuesday': return 10; break
+            case 'wednesday': return 15; break
+            case 'thursday': return 12.50; break
+            case 'friday': return 15; break
+            case 'saturday': return 25; break
+            case 'sunday': return 30; break
+            default: return 'error'; break
+        }
+    }else if (titleToLower === 'schindler\'s list'){
+        switch(dayToLower) {
+            case 'monday': return 8.50; break
+            case 'tuesday': return 8.50; break
+            case 'wednesday': return 8.50; break
+            case 'thursday': return 8.50; break
+            case 'friday': return 8.50; break
+            case 'saturday': return 15; break
+            case 'sunday': return  15; break
+            default: return 'error'; break
+        }
+    }else if (titleToLower === 'casablanca'){
+        switch(dayToLower) {
+            case 'monday': return 8; break
+            case 'tuesday': return 8; break
+            case 'wednesday': return 8; break
+            case 'thursday': return 8; break
+            case 'friday': return 8; break
+            case 'saturday': return 10; break
+            case 'sunday': return  10; break
+            default: return 'error'; break
+        }
+    }else if (titleToLower === 'the wizard of oz'){
+        switch(dayToLower) {
+            case 'monday': return 10; break
+            case 'tuesday': return 10; break
+            case 'wednesday': return 10; break
+            case 'thursday': return 10; break
+            case 'friday': return 10; break
+            case 'saturday': return 15; break
+            case 'sunday': return  15; break
+            default: return 'error'; break
+        }
+    }else{
+        return 'error'
+    }
+}
+
+console.log(moviePrices(['The Godfather', 'Friday']))
